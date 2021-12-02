@@ -157,10 +157,7 @@ blockquote {
   font-size: 17.5px;
   border-left: 5px solid #fb730f;
 }
-.qoute-icon {
-}
-.blockquote-content {
-}
+
 .blockquote-text {
   font-family: "Roboto Condensed", sans-serif;
   color: #1c1e1e;
@@ -186,8 +183,7 @@ hr {
 /*-----------------------
     2 Form Elements:
 -------------------------*/
-label {
-}
+
 .control-label {
   font-size: 13px;
   text-transform: capitalize;
@@ -196,12 +192,7 @@ label {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.form-control:focus {
-}
-.textarea.form-control {
-}
-.required {
-}
+
 .form-group {
   margin-bottom: 5px;
 }
@@ -685,8 +676,8 @@ a img.aligncenter {
 .bg-white {
   background-color: #fff;
 }
-.outline {
-}
+
+
 .section-title {
   margin-bottom: 40px;
   text-align: center;
@@ -736,26 +727,13 @@ a img.aligncenter {
 /*--------------------------------
 4.5 Features Block 
 ----------------------------------*/
-.features-section {
-}
 .feature {
   text-align: center;
 }
 .feature-list {
   border-bottom: 1px solid #e8ecf0;
 }
-.feature-list ul {
-}
-.feature-list ul li {
-}
-.feature-icon {
-}
-.feature-content {
-}
-.feature-inner {
-}
-.feature-outline {
-}
+
 
 /*--- Feature left  class ---*/
 .feature-left {
@@ -974,7 +952,7 @@ img {
   line-height: 63px;
 }
 .account-section ul {
-  padding-left: 20px;
+  padding-left: 0px;
 }
 .account-section ul li {
   float: left;
@@ -2824,6 +2802,7 @@ Login Form
   letter-spacing: 1px;
 }
 
+
 /*------------------------
 10. Blog pages
 --------------------------*/
@@ -3298,6 +3277,110 @@ Class----------------
   font-size: 14px;
 }
 
+/*favorite list product*/
+
+.box-head-gray{
+  padding: 20px 50px 0 20px;
+  background-color: rgb(243,245,247);
+  color: rgb(196, 196, 196);
+  font-weight: normal;
+
+}
+.box-body-gray{
+  padding: 0px 50px 0px 50px;
+  background-color: rgb(243,245,247);
+}
+.list-favorites{
+
+}
+
+.list-favorites .item{
+  padding: 20px 70px 20px 15px;
+  display: flex;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  border-radius: 5px;
+  position: relative;
+  height: 180px;
+  background-color: white;
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+}
+
+.list-favorites .item .btn-delete{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  font-size: 35px;
+  padding:2px;
+
+}
+
+ 
+.list-favorites .item .thumbnail{
+  border: none;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.list-favorites .item .thumbnail img{
+  width: 130px;
+}
+
+.list-favorites .item .body{
+  flex: 1 1 0%;
+}
+.list-favorites .item .body .rating-review{
+  margin-top: 10px;
+}
+
+.list-favorites .item .body .rating{
+  margin-right: 5px;
+  color: rgb(243,198,12);
+}
+
+.list-favorites .item .body .review-count{
+  font-size: 14px;
+}
+
+.list-favorites .item .footer{
+  text-align: right;
+  padding: 0;
+}
+
+.list-favorites .item .footer .price-discount{
+  color: rgb(247, 64, 79);
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.list-favorites .item .footer .wrap{
+  display: flex;
+  font-size: 13px;
+  line-height: 1.15;
+  align-items: center;
+}
+.list-favorites .item .footer .wrap .price{
+  border-right: 1px solid gray;
+  padding-right: 10px;
+}
+.list-favorites .item .footer .wrap .discount{
+  margin-left: 10px;
+  border: 1px solid red;
+  padding-top: 2px;
+  border-radius: 3px;
+  background-color: rgb(252,239,240);
+  font-size: 12px;
+}
+
+.list-favorites .item .footer .wrap .discount::before{
+  background-color: black;
+  height: 8px;
+  content: "";
+  top: 2px;
+}
 /*==========  Non-Mobile First Method  ==========*/
 
 /* Large Devices, Wide Screens */

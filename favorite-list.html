@@ -73,9 +73,10 @@
                             <li><a href="" class="title hidden-xs">tài khoản</a></li>
                             <li class="hidden-xs">|</li>
                             <li><a href="login-form.html" class="title hidden-xs">đăng nhập</a></li>
-                            <li><a href="favorite-list.html"><i class="fa fa-heart"></i></a></li>
-                            <li><a href="" class="title"><i class="fa fa-shopping-cart"></i></a></li>
-                         
+                            <li><a href=""><i class="fa fa-heart"></i></a></li>
+                            <li><a href="cart.html" class="title"><i class="fa fa-shopping-cart"></i> <sup
+                                        class="cart-quantity">1</sup></a></li>
+
                         </ul>
                     </div>
                     <!-- /.account -->
@@ -114,7 +115,7 @@
                     <div class="page-breadcrumb">
                         <ol class="breadcrumb">
                             <li><a href="#">Trang chủ</a></li>
-                            <li>Giỏ hàng</li>
+                            <li>Sản phẩm yêu thích</li>
                         </ol>
                     </div>
 
@@ -124,144 +125,97 @@
     </div>
     <!-- /.page-header-->
     <!-- cart-section -->
-    <div class="space-medium">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                    <div class="box">
-                        <div class="box-head">
-                            <h3 class="head-title">Giỏ hàng của tôi</h3>
-                        </div>
-                        <!-- cart-table-section -->
-                        <div class="box-body">
-                            <div class="table-responsive">
-                                <div class="cart">
-                                    <table class="table table-bordered ">
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <span>Mặt hàng</span>
-                                                </th>
-                                                <th>
-                                                    <span>Giá</span>
-                                                </th>
-                                                <th>
-                                                    <span>Số lượng</span>
-                                                </th>
-                                                <th>
-                                                    <span>Tổng tiền</span>
-                                                </th>
-                                                <th>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="#"><img src="images/cart_product_1.png" alt=""></a>
-                                                    <span><a href="#">Google Pixle</a></span>
-                                                </td>
-                                                <td>25.000.000 VND</td>
-                                                <td>
-                                                    <div class="product-quantity">
-                                                        <div class="quantity">
-                                                            <input type="number" class="input-text qty text" step="1"
-                                                                min="1" max="6" name="quantity" value="1" title="Qty"
-                                                                size="4" pattern="[0-9]*">
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>25.000.000 VND</td>
-                                                <th scope="row"><a href="#" class="btn-close"><i
-                                                            class="fa fa-times-circle-o"></i></a></th>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#"><img src="images/cart_product_2.png" alt=""></a>
-                                                    <span><a href="#">Apple iPhone 6S </a></span>
-                                                </td>
-                                                <td>30.000.000 VND</td>
-                                                <td>
-                                                    <div class="product-quantity">
-                                                        <div class="quantity">
-                                                            <input type="number" class="input-text qty text " step="1"
-                                                                min="1" max="6" name="quantity" value="1" title="Qty"
-                                                                size="4" pattern="[0-9]*">
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>30.000.000 VND</td>
-                                                <th scope="row"><a href="#" class="btn-close"><i
-                                                            class="fa fa-times-circle-o"></i></a></th>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- /.cart-table-section -->
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn-link"><i class="fa-angle"></i>
-                        <center> Trở về trang mua hàng</center>
-                    </a>
+    <!-- <div class="space-medium"> -->
+    <div class="container">
+        <div class="row">
+
+            <div class="box">
+                <div class="box-head box-head-gray">
+                    <h3 class="head-title">Danh sách yêu thích</h3>
                 </div>
-                <!-- cart-total -->
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="box mb30">
-                        <div class="box-head">
-                            <h3 class="head-title">Chi tiết giá đơn hàng</h3>
-                        </div>
-                        <div class="box-body">
-                            <div class=" table-responsive">
-                                <div class="pay-amount ">
-                                    <table class="table mb20">
-                                        <tbody>
-                                            <tr>
-                                                <th>
-                                                    <span>Giá (2 mặt hàng)</span>
-                                                </th>
-                                                <td>55.000.000 VND</td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    <span>Phí vận chuyển</span>
-                                                </th>
-                                                <td><strong class="text-green">Miễn phí</strong></td>
-                                            </tr>
-                                        </tbody>
-                                        <tbody>
-                                            <tr>
-                                                <th>
-                                                    <span class="mb0" style="font-weight: 700;">Tổng</span>
-                                                </th>
-                                                <td style="font-weight: 700; color: #1c1e1e; ">55.000.000 VND</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <button class="btn btn-primary btn-block">Thanh toán</button>
+                <div class="box-body box-body-gray">
+                    <ul class="list-favorites">
+                        <li class="item">
+                            <button class="btn-delete">×</button>
+                            <div class="thumbnail">
+                                <a href="product-single.html" class="img">
+                                    <img src="https://media3.scdn.vn/img4/2021/09_16/GGLGduTGmON5lp2Xmii5_simg_de2fe0_500x500_maxb.jpg"
+                                        alt="">
+                                </a>
                             </div>
-                        </div>
-                    </div>
-                    <!-- coupon-section -->
-                    <div class="box mb30">
-                        <div class="box-head">
-                            <h3 class="head-title">Mã giảm giá</h3>
-                        </div>
-                        <div class="box-body">
-                            <form>
-                                <div class="coupon-form">
-                                    <input type="text" name="coupon_code" class="form-control" id="coupon_code" value=""
-                                        placeholder="Nhập mã giảm giá">
-                                    <input type="submit" class="btn btn-primary btn-block" name="apply_coupon"
-                                        value="Áp dụng">
+
+                            <div class="body">
+                                <a href="product-single.html" class="name">Điện Thoại iPhone 13 Pro Max 256GB - Hàng
+                                    Chính Hãng</a>
+                                <div class="rating-review">
+                                    <div class="rating">
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                    </div>
+                                    <span class="review-count">(10 nhận xét)</span>
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- /.coupon-section -->
+
+                            </div>
+
+                            <div class="footer">
+                                <div class="price-discount">36.990.00 đ</div>
+                                <div class="wrap">
+                                    <div class="price"><strike>37.990.000 đ</strike></div>
+                                    <div class="discount">-3%</div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="item">
+                            <button class="btn-delete">×</button>
+                            <div class="thumbnail">
+                                <a href="product-single.html" class="img">
+                                    <img src="https://salt.tikicdn.com/cache/400x400/ts/product/81/73/6c/e3220a1f860b8611cfc0e7f78d515fbf.jpg.webp"
+                                        alt="">
+                                </a>
+                            </div>
+
+                            <div class="body">
+                                <a href="product-single.html" class="name">Điện Thoại iPhone 13 Pro Max 256GB - Hàng
+                                    Chính Hãng</a>
+                                    <div class="rating-review">
+                                        <div class="rating">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star-o"></i></span>
+                                        </div>
+                                        <span class="review-count">(10 nhận xét)</span>
+                                    </div>
+    
+                            </div>
+
+                            <div class="footer">
+                                <div class="price-discount">36.990.000 đ</div>
+                                <div class="wrap">
+                                    <div class="price"><strike>37.990.00 đ</strike></div>
+                                    <div class="discount">-3%</div>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!-- /.cart-total -->
+            <a href="#" class="btn-link" style="display:block; margin-bottom: 20px">
+                <center> Trở về trang mua hàng</center>
+            </a>
+
+            <!-- cart-total -->
+
         </div>
+        <!-- /.cart-total -->
+        <!-- </div> -->
     </div>
     <!-- /.cart-section -->
     <!-- footer -->
