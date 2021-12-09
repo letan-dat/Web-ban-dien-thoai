@@ -677,7 +677,6 @@ a img.aligncenter {
   background-color: #fff;
 }
 
-
 .section-title {
   margin-bottom: 40px;
   text-align: center;
@@ -712,7 +711,7 @@ a img.aligncenter {
 .text-secondary {
   color: #848687;
 }
- 
+
 .well-block {
   background-color: #fff;
   padding: 40px;
@@ -733,7 +732,6 @@ a img.aligncenter {
 .feature-list {
   border-bottom: 1px solid #e8ecf0;
 }
-
 
 /*--- Feature left  class ---*/
 .feature-left {
@@ -2142,30 +2140,31 @@ img {
   padding-top: 15px;
   background: white;
   display: flex;
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
-.description-details .dgctpro{
+.description-details .dgctpro {
   border-bottom: 1px solid rgba(221, 221, 221, 0.767);
 }
-.description-details .description-left{
+.description-details .description-left {
   padding: 15px;
   flex: left;
   border: 1px solid rgba(221, 221, 221, 0.767);
 }
 
-.description-details .description-left h2,h3{
+.description-details .description-left h2,
+h3 {
   font-weight: 500;
   color: black;
 }
-.description-details .description-left .content-desc{
+.description-details .description-left .content-desc {
   overflow: hidden;
 }
-.description-details .description-left .content-desc p{
+.description-details .description-left .content-desc p {
   color: rgb(61, 61, 61);
 }
 
-.description-details .description-left button{
+.description-details .description-left button {
   margin: 15px auto 0 35px;
   width: 90%;
   border: none;
@@ -2196,44 +2195,43 @@ img {
 .highlights {
   margin-bottom: 40px;
 }
- 
+
 .highlights ul li {
   color: #848687;
 }
 
-.container-rating-review .box-body{
+.container-rating-review .box-body {
   display: flex;
-   
 }
 
-.container-rating-review .box-body .rating-box{
+.container-rating-review .box-body .rating-box {
   width: 30%;
 }
 
-.container-rating-review .box-body .review-box{
+.container-rating-review .box-body .review-box {
   width: 70%;
   padding-left: 15px;
 }
 .rating-review {
   display: flex;
 }
-.review-box .product-rating{
+.review-box .product-rating {
   height: 25px;
 }
-.review-box .product-rating i{
+.review-box .product-rating i {
   font-size: 15px;
 }
 
-.rating-review .score-rating{
+.rating-review .score-rating {
   padding-top: 10px;
   padding-right: 10px;
 }
-.rating-review .product-rating{
+.rating-review .product-rating {
   display: flex;
   margin: 0;
 }
 
-.rating-review .product-rating i{
+.rating-review .product-rating i {
   font-size: 22px;
   padding: 4px;
 }
@@ -2246,10 +2244,9 @@ img {
 .review-rating {
   text-align: center;
   font-size: 19px;
-
 }
 
-.review-rating .star-rate{
+.review-rating .star-rate {
   margin: auto;
   position: none;
   left: 0;
@@ -2264,22 +2261,22 @@ img {
   margin-bottom: 20px;
   font-size: 40px;
 }
-.rating-view-details{
+.rating-view-details {
   margin-left: 30px;
   margin-top: 15px;
 }
 
-.rating-view-details .rating-level{
+.rating-view-details .rating-level {
   display: flex;
 }
 
-.rating-view-details .rating-level .product-rating{
+.rating-view-details .rating-level .product-rating {
   display: flex;
   margin-right: 25px;
   margin-bottom: 0;
 }
 
-.rating-view-details .rating-level .product-rating i{
+.rating-view-details .rating-level .product-rating i {
   padding-right: 7px;
 }
 
@@ -2296,32 +2293,31 @@ img {
   position: relative;
 }
 
-.review-form{
+.review-form {
   display: flex;
   align-items: center;
 }
 
-.review-form .review-left{
+.review-form .review-left {
   width: 30%;
-  
 }
-.review-form .review-right{
+.review-form .review-right {
   padding: 0;
 }
 .review-form form {
   padding: 40px;
 }
-.review-form input.form-control{
+.review-form input.form-control {
   height: 40px;
 }
 .review-form .form-control {
   padding: 10px;
   margin-bottom: 30px;
   border: 1px solid gray;
-  color:gray;
+  color: gray;
 }
 
-.review-form .btn-primary{
+.review-form .btn-primary {
   height: 40px;
   padding: 5px;
   width: 200px;
@@ -2642,7 +2638,7 @@ img {
 /*--------------------------
  9.7  Styleguide
  ----------------------------*/
- 
+
 .box-head {
   background-color: #ffffff;
   border-bottom: 1px solid #f3f5f7;
@@ -2801,7 +2797,6 @@ Login Form
   padding-left: 6px;
   letter-spacing: 1px;
 }
-
 
 /*------------------------
 10. Blog pages
@@ -3279,22 +3274,20 @@ Class----------------
 
 /*favorite list product*/
 
-.box-head-gray{
+.box-head-gray {
   padding: 20px 50px 0 20px;
-  background-color: rgb(243,245,247);
+  background-color: rgb(243, 245, 247);
   color: rgb(196, 196, 196);
   font-weight: normal;
-
 }
-.box-body-gray{
+.box-body-gray {
   padding: 0px 50px 0px 50px;
-  background-color: rgb(243,245,247);
+  background-color: rgb(243, 245, 247);
 }
-.list-favorites{
-
+.list-favorites {
 }
 
-.list-favorites .item{
+.list-favorites .item {
   padding: 20px 70px 20px 15px;
   display: flex;
   border-bottom: 1px solid rgb(199, 199, 199);
@@ -3302,10 +3295,10 @@ Class----------------
   position: relative;
   height: 180px;
   background-color: white;
-  font-family: "Roboto",Helvetica,Arial,sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
-.list-favorites .item .btn-delete{
+.list-favorites .item .btn-delete {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -3314,72 +3307,171 @@ Class----------------
   border: none;
   background-color: white;
   font-size: 35px;
-  padding:2px;
-
+  padding: 2px;
 }
 
- 
-.list-favorites .item .thumbnail{
+.list-favorites .item .thumbnail {
   border: none;
   margin-right: 20px;
   margin-bottom: 0;
 }
-.list-favorites .item .thumbnail img{
+.list-favorites .item .thumbnail img {
   width: 130px;
 }
 
-.list-favorites .item .body{
+.list-favorites .item .body {
   flex: 1 1 0%;
 }
-.list-favorites .item .body .rating-review{
+.list-favorites .item .body .rating-review {
   margin-top: 10px;
 }
 
-.list-favorites .item .body .rating{
+.list-favorites .item .body .rating {
   margin-right: 5px;
-  color: rgb(243,198,12);
+  color: rgb(243, 198, 12);
 }
 
-.list-favorites .item .body .review-count{
+.list-favorites .item .body .review-count {
   font-size: 14px;
 }
 
-.list-favorites .item .footer{
+.list-favorites .item .footer {
   text-align: right;
   padding: 0;
 }
 
-.list-favorites .item .footer .price-discount{
+.list-favorites .item .footer .price-discount {
   color: rgb(247, 64, 79);
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-.list-favorites .item .footer .wrap{
+.list-favorites .item .footer .wrap {
   display: flex;
   font-size: 13px;
   line-height: 1.15;
   align-items: center;
 }
-.list-favorites .item .footer .wrap .price{
+.list-favorites .item .footer .wrap .price {
   border-right: 1px solid gray;
   padding-right: 10px;
 }
-.list-favorites .item .footer .wrap .discount{
+.list-favorites .item .footer .wrap .discount {
   margin-left: 10px;
   border: 1px solid red;
   padding-top: 2px;
   border-radius: 3px;
-  background-color: rgb(252,239,240);
+  background-color: rgb(252, 239, 240);
   font-size: 12px;
 }
 
-.list-favorites .item .footer .wrap .discount::before{
+.list-favorites .item .footer .wrap .discount::before {
   background-color: black;
   height: 8px;
   content: "";
   top: 2px;
+}
+
+/*------------information account -------------*/
+
+.row-account {
+  display: flex;
+}
+
+.row-account .left-container {
+  /* background: rgb(250, 250, 250); */
+  padding: 10px 0 10px 10px;
+  width: 25%;
+  margin-right: 15px;
+}
+
+.row-account .left-container .user-infor {
+  margin-bottom: 15px;
+  color: black;
+}
+.row-account .left-container .user-infor img {
+  width: 50px;
+  border-radius: 50px;
+  margin-right: 8px;
+}
+
+.row-account .left-container .side-bar-content {
+}
+
+.row-account .left-container .side-bar-content li{
+  height: 40px;
+  box-sizing: border-box;
+  padding: 5px 0;
+}
+
+.row-account .left-container .side-bar-content li:hover{
+  cursor: pointer;
+  background: rgb(214, 214, 214);
+}
+
+.row-account .left-container .side-bar-content li.active{
+  background: rgb(214, 214, 214);
+}
+
+.row-account .left-container .side-bar-content i {
+  margin-right: 20px;
+  margin-left: 13px;
+}
+
+.row-account .right-container {
+  width: 74%;
+}
+
+.row-account .right-container .title-content{
+  font-weight: 300;
+  margin-top: 20px;
+}
+.row-account .right-container .account-infor{
+  height: 470px;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.row-account .right-container .account-infor .form-control{
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.row-account .right-container .account-infor .form-control .input-label{
+  width: 15%;
+  font-weight: 400;
+  margin: 0;
+}
+
+.row-account .right-container .account-infor .form-control .input-field{
+  width: 350px;
+  height: 35px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  padding: 2px 10px;
+  outline: 0;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.row-account .right-container .account-infor .form-control .input-radio{
+  width:50px;
+  margin: 0;
+  /* text-align: left; */
+}
+
+.row-account .right-container .account-infor .btn-update{
+  width: 120px;
+  background: rgb(88,176,229);
+  color: white;
+  border: none;
+  height: 35px;
+  margin-left: 130px;
+  border-radius: 3px;
 }
 /*==========  Non-Mobile First Method  ==========*/
 

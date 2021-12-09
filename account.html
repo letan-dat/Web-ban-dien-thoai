@@ -17,6 +17,8 @@
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- FontAwesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -73,7 +75,8 @@
                             <li class="hidden-xs">|</li>
                             <li><a href="login-form.html" class="title hidden-xs">Đăng nhập</a></li>
                             <li><a href="favorite-list.html"><i class="fa fa-heart"></i></a></li>
-                            <li><a href="cart.html" class="title"><i class="fa fa-shopping-cart"></i>   <sup class="cart-quantity">1</sup></a>
+                            <li><a href="cart.html" class="title"><i class="fa fa-shopping-cart"></i> <sup
+                                        class="cart-quantity">1</sup></a>
                             </li>
                         </ul>
                     </div>
@@ -127,8 +130,72 @@
     <div class="content">
         <div class="container">
             <div class="box">
-                <div class="row">
-                    
+                <div class="row-account">
+                    <div class="left-container">
+                        <div class="user-infor">
+                            <img src="images/user-img.png" alt="">
+                            <span>NGUYEN DU KHANH</span>
+                        </div>
+                        <div class="side-bar-content">
+                            <ul>
+                                <li class="slide-bar active"><i class="fa fa-edit"></i><span>Thông tin tài khoản</span></li>
+                                <li class="slide-bar"><i class="fas fa-money-check"></i><span>Quản lý đơn hàng</span></li>
+                                <li class="slide-bar"><i class="fas fa-map-marker-alt"></i><span> Địa chỉ nhận hàng</span></li>
+                                <li class="slide-bar"><i class="fas fa-lock"></i><span> Đổi mật khẩu</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-container">
+                        <h3 class="title-content">Thông tin tài khoản</h3>
+                        <div class="account-infor">
+                            <form action="">
+                                <div class="form-control">
+                                    <label for="" class="input-label">
+                                        Họ & tên
+                                    </label>
+                                    <input type="text" placeholder="Thêm họ tên" class="input-field">
+                                </div>
+                                <div class="form-control">
+                                    <label for="" class="input-label">
+                                        Email
+                                    </label>
+                                    <input type="email" placeholder="Thêm email" class="input-field">
+                                </div>
+                                <div class="form-control">
+                                    <label for="" class="input-label">
+                                        Tên đăng nhập
+                                    </label>
+                                    <input type="phone" placeholder="Thêm tên đăng nhập" class="input-field">
+                                </div>
+                                <div class="form-control">
+                                    <label for="" class="input-label">
+                                        Số điện thoại
+                                    </label>
+                                    <input type="phone" placeholder="Thêm số điện thoại" class="input-field">
+                                </div>
+                             
+                                <div class="form-control">
+                                    <label for="" class="input-label">
+                                        Ngày sinh
+                                    </label>
+                                    <input type="date" placeholder="Thêm ngày sinh" class="input-field">
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="" class="input-label">
+                                        Giới tính
+                                    </label>
+
+                                    <input type="radio" name="gender" value="male" checked class="input-radio"> Nam
+                                    <input type="radio" name="gender" value="female" class="input-radio"> Nữ
+                                    <input type="radio" name="gender" value="other" class="input-radio"> Khác
+
+                                </div>
+
+                                <button class="btn-update">Cập nhật</button>
+                            </form>
+                        </div>
+                    </div>
                     <!-- /.features -->
                 </div>
             </div>
@@ -146,7 +213,8 @@
                         <h3 class="footer-title">Thông tin hỗ trợ</h3>
                         <div class="contact-info">
                             <span class="contact-icon"><i class="fa fa-map-marker"></i></span>
-                            <span class="contact-text">Phường Linh Trung, Thủ Đức<br>Thành phố Hồ Chí Minh, Việt Nam - 1955</span>
+                            <span class="contact-text">Phường Linh Trung, Thủ Đức<br>Thành phố Hồ Chí Minh, Việt Nam -
+                                1955</span>
                         </div>
                         <div class="contact-info">
                             <span class="contact-icon"><i class="fa fa-phone"></i></span>
@@ -190,12 +258,15 @@
                     <div class="footer-widget">
                         <h3 class="footer-title">Liên lạc với chúng tôi</h3>
                         <div class="ft-social">
-                            <span><a href="#" class="btn-social btn-facebook" ><i class="fa fa-facebook"></i></a></span>
+                            <span><a href="#" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a></span>
                             <span><a href="#" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a></span>
-                            <span><a href="#" class="btn-social btn-googleplus"><i class="fa fa-google-plus"></i></a></span>
+                            <span><a href="#" class="btn-social btn-googleplus"><i
+                                        class="fa fa-google-plus"></i></a></span>
                             <span><a href="#" class=" btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a></span>
-                            <span><a href="#" class=" btn-social btn-pinterest"><i class="fa fa-pinterest-p"></i></a></span>
-                            <span><a href="#" class=" btn-social btn-instagram"><i class="fa fa-instagram"></i></a></span>
+                            <span><a href="#" class=" btn-social btn-pinterest"><i
+                                        class="fa fa-pinterest-p"></i></a></span>
+                            <span><a href="#" class=" btn-social btn-instagram"><i
+                                        class="fa fa-instagram"></i></a></span>
                         </div>
                     </div>
                 </div>
@@ -216,7 +287,8 @@
                             </ul>
                         </div>
                         <p class="alignright">Copyright © All Rights Reserved 2020 Template Design by
-                            <a href="https://easetemplate.com/" target="_blank" class="copyrightlink">Nhom 21</a></p>
+                            <a href="https://easetemplate.com/" target="_blank" class="copyrightlink">Nhom 21</a>
+                        </p>
                     </div>
                 </div>
             </div>
