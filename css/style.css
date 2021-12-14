@@ -3395,10 +3395,7 @@ Class----------------
   border-radius: 50px;
   margin-right: 8px;
 }
-
-.row-account .left-container .side-bar-content {
-}
-
+ 
 .row-account .left-container .side-bar-content li{
   height: 40px;
   box-sizing: border-box;
@@ -3428,13 +3425,16 @@ Class----------------
   margin-top: 20px;
 }
 .row-account .right-container .account-infor{
-  height: 470px;
+  height: 510px;
   width: 100%;
   background: white;
   border-radius: 5px;
-  padding: 20px;
+  padding: 40px;
 }
-
+.row-account .right-container .account-infor form{
+  /* margin: 0 auto; */
+  width: 500px;
+}
 .row-account .right-container .account-infor .form-control{
   border: none;
   display: flex;
@@ -3442,7 +3442,7 @@ Class----------------
 }
 
 .row-account .right-container .account-infor .form-control .input-label{
-  width: 15%;
+  width: 25%;
   font-weight: 400;
   margin: 0;
 }
@@ -3470,9 +3470,88 @@ Class----------------
   color: white;
   border: none;
   height: 35px;
-  margin-left: 130px;
+  margin: 0 auto;
+  display: block;
   border-radius: 3px;
 }
+
+
+/* =========== reset password page ====================*/
+.reset-password-content{ 
+  height: 350px;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  padding: 40px 20px;
+}
+.reset-password-content form{
+  margin: 0 auto;
+  width: 540px;
+}
+
+.reset-password-content .form-control{
+  border: none;
+}
+
+.reset-password-content .form-control .input-label{
+  width: 27%;
+  font-weight: 400;
+}
+
+.reset-password-content .form-control .input-field{
+  width: 350px;
+  height: 35px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  padding: 2px 10px;
+  outline: 0;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.reset-password-content .btn-update-password{
+  display: block;
+  margin: 30px auto;
+  width: 120px;
+  background: rgb(88,176,229);
+  color: white;
+  border: none;
+  height: 35px;
+  border-radius: 3px;
+}
+
+/*=========== address deliver =========*/
+
+.address-content{
+  height: 600px;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  padding: 40px 20px;
+}
+.address-content form{
+  width: 600px;
+}
+.address-content .form-control{
+  border: none;
+  align-items: center;
+  height: auto;
+}
+
+.address-content .form-control .input-label{
+  width: 24%;
+}
+.address-content .form-control .input-field{
+  width: 400px;
+  height: 35px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  padding: 2px 10px;
+  outline: 0;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
 /*==========  Non-Mobile First Method  ==========*/
 
 /* Large Devices, Wide Screens */
