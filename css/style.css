@@ -3433,7 +3433,7 @@ Class----------------
 }
 .row-account .right-container .account-infor form{
   /* margin: 0 auto; */
-  width: 500px;
+  width: 700px;
 }
 .row-account .right-container .account-infor .form-control{
   border: none;
@@ -3448,8 +3448,8 @@ Class----------------
 }
 
 .row-account .right-container .account-infor .form-control .input-field{
-  width: 350px;
-  height: 35px;
+  width: 600px;
+  height: 40px;
   border: 1px solid gray;
   box-sizing: border-box;
   padding: 2px 10px;
@@ -3550,6 +3550,113 @@ Class----------------
   outline: 0;
   font-size: 15px;
   border-radius: 3px;
+}
+
+/*=================profile-receipt-page--===========*/
+.receipt-infor{
+  height: 300px;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  padding: 40px 20px;
+}
+
+.receipt-infor .table{
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.receipt-infor .table .thead-light{
+  background: #e9ecef;
+}
+
+.receipt-infor .table th,td{
+  text-align: center;
+  height: 45px;
+}
+
+.receipt-infor .table th{
+  font-weight: 600;
+  color: rgb(90, 90, 90);
+}
+.receipt-infor .table td{
+  color: rgb(80, 78, 78);
+  padding: 10px;
+}
+
+.receipt-infor .table a{
+  color: rgb(88,176,229);
+}
+
+
+/*=========== receipt-details-page=============*/
+.receipt-infor-details{
+  height: auto;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  padding: 40px 20px;
+
+}
+
+.receipt-infor-details .title-receipt{
+  display: flex;
+}
+
+.receipt-infor-details .title-receipt .left-content{
+  width: 40%;
+  margin-right: 10px;
+}
+.receipt-infor-details .title-receipt .right-content{
+
+}
+.receipt-infor-details .title-receipt .content{
+  border: 1px solid rgb(165, 165, 165);
+  padding: 10px;
+}
+
+.receipt-infor-details .title-receipt .content p{
+  margin-bottom: 10px;
+  color: rgb(75, 75, 75);
+}
+
+.receipt-infor-details .table {
+  border: 1px solid rgb(165, 165, 165);
+  margin-top: 10px;
+}
+
+.receipt-infor-details .table th{
+  color: rgb(88, 88, 88);
+  font-weight: 600;
+  text-align: center;
+}
+
+.receipt-infor-details .table td .item-center{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 50px; */
+}
+.receipt-infor-details .table .product-title{
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.receipt-infor-details .table .product-title img{
+  width: 100px;
+}
+.receipt-infor-details .table .product-title p{
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: rgb(61, 61, 61);
+}
+
+.receipt-infor-details .table tfoot td{
+  text-align: right;
+}
+.receipt-infor-details .table tfoot p{
+  margin-bottom: 5px;
 }
 
 /*==========  Non-Mobile First Method  ==========*/
