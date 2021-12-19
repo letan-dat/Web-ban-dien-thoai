@@ -17,6 +17,7 @@
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Google Fonts -->
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- FontAwesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -75,7 +76,7 @@
                             <li><a href="login-form.html" class="title hidden-xs">đăng nhập</a></li>
                             <li><a href="favorite-list.html"><i class="fa fa-heart"></i></a></li>
                             <li><a href="" class="title"><i class="fa fa-shopping-cart"></i></a></li>
-                         
+
                         </ul>
                     </div>
                     <!-- /.account -->
@@ -124,145 +125,133 @@
     </div>
     <!-- /.page-header-->
     <!-- cart-section -->
-    <div class="space-medium">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                    <div class="box">
-                        <div class="box-head">
-                            <h3 class="head-title">Giỏ hàng của tôi</h3>
-                        </div>
-                        <!-- cart-table-section -->
-                        <div class="box-body">
-                            <div class="table-responsive">
-                                <div class="cart">
-                                    <table class="table table-bordered ">
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <span>Mặt hàng</span>
-                                                </th>
-                                                <th>
-                                                    <span>Giá</span>
-                                                </th>
-                                                <th>
-                                                    <span>Số lượng</span>
-                                                </th>
-                                                <th>
-                                                    <span>Tổng tiền</span>
-                                                </th>
-                                                <th>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="#"><img src="images/cart_product_1.png" alt=""></a>
-                                                    <span><a href="#">Google Pixle</a></span>
-                                                </td>
-                                                <td>25.000.000 VND</td>
-                                                <td>
-                                                    <div class="product-quantity">
-                                                        <div class="quantity">
-                                                            <input type="number" class="input-text qty text" step="1"
-                                                                min="1" max="6" name="quantity" value="1" title="Qty"
-                                                                size="4" pattern="[0-9]*">
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>25.000.000 VND</td>
-                                                <th scope="row"><a href="#" class="btn-close"><i
-                                                            class="fa fa-times-circle-o"></i></a></th>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#"><img src="images/cart_product_2.png" alt=""></a>
-                                                    <span><a href="#">Apple iPhone 6S </a></span>
-                                                </td>
-                                                <td>30.000.000 VND</td>
-                                                <td>
-                                                    <div class="product-quantity">
-                                                        <div class="quantity">
-                                                            <input type="number" class="input-text qty text " step="1"
-                                                                min="1" max="6" name="quantity" value="1" title="Qty"
-                                                                size="4" pattern="[0-9]*">
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>30.000.000 VND</td>
-                                                <th scope="row"><a href="#" class="btn-close"><i
-                                                            class="fa fa-times-circle-o"></i></a></th>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+
+    <div class="container">
+        <div class="cart-content mt30 mb30">
+            <div class="title-header mb20">
+                <h2 class="title">Giỏ Hàng</h2>
+                <p><span class="text-blue">2</span> sản phẩm trong giỏ hàng của bạn</p>
+            </div>
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th></th>
+                        <th>Sản phẩm</th>
+                        <th scope="col">Đơn giá</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Thành tiền</th>
+                        <th scope="col"></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="item-center pdl10"><input type="checkbox" class="checkboxStyle"></div>
+                        </td>
+                        <td>
+                            <div class="product-title item-center">
+                                <img src="images/iPhone_13.jpg" alt="">
+                                <div>
+                                    <p>iPhone 13 Pro 128GB</p>
+                                    <p>Màu sắc: Đỏ</p>
                                 </div>
-                                <!-- /.cart-table-section -->
                             </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn-link"><i class="fa-angle"></i>
-                        <center> Trở về trang mua hàng</center>
-                    </a>
+                        </td>
+                        <td>
+                            <div class="item-center">30.750.000đ</div>
+                        </td>
+                        <td>
+                            <div class="item-center">
+                                <div class="quantity">
+                                    <input class="btn-quantity decrease-quantity" onclick="dcQuantity()" type="button"
+                                        value="-">
+                                    <input type="number" max="10" min="1" name="quantity" value="1"
+                                        class="quantity-input" id="quantity-input">
+                                    <input class="btn-quantity increase-quantity" onclick="icQuantity()" type="button"
+                                        value="+">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-center text-red">30.750.000đ</div>
+                        </td>
+                        <td>
+                            <div class="item-center pinside10"><i class="far fa-trash-alt"></i></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="item-center pdl10"><input type="checkbox" class="checkboxStyle"></div>
+                        </td>
+                        <td>
+                            <div class="product-title item-center">
+                                <img src="images/iphone11.png" alt="">
+                                <div>
+                                    <p>iPhone 11 Pro 128GB</p>
+                                    <p>Màu sắc: Xanh</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-center">17.000.000đ</div>
+                        </td>
+                        <td>
+                            <div class="item-center">
+                                <div class="quantity">
+                                    <input class="btn-quantity decrease-quantity" onclick="dcQuantity()" type="button"
+                                        value="-">
+                                    <input type="number" max="10" min="1" name="quantity" value="1"
+                                        class="quantity-input" id="quantity-input">
+                                    <input class="btn-quantity increase-quantity" onclick="icQuantity()" type="button"
+                                        value="+">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-center text-red">17.000.000đ</div>
+                        </td>
+                        <td>
+                            <div class="item-center pinside10"><i class="far fa-trash-alt"></i></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="prices-summary">
+                <div class="left-content">
+                    <a href="product-list.html" class="derection-product text-blue"><i class="fas fa-long-arrow-alt-left"></i> Tiếp tục
+                        mua hàng</a>
                 </div>
-                <!-- cart-total -->
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="box mb30">
-                        <div class="box-head">
-                            <h3 class="head-title">Chi tiết giá đơn hàng</h3>
+                <div class="right-con">
+                    <div class="total-receipt">
+                        <div class="promotion-code pinside20">
+                            <input type="text" class="input-code" placeholder="Nhập mã ưu đãi">
+                            <button type="submit" class="submit-code btn-default">Áp dụng</button>
                         </div>
-                        <div class="box-body">
-                            <div class=" table-responsive">
-                                <div class="pay-amount ">
-                                    <table class="table mb20">
-                                        <tbody>
-                                            <tr>
-                                                <th>
-                                                    <span>Giá (2 mặt hàng)</span>
-                                                </th>
-                                                <td>55.000.000 VND</td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    <span>Phí vận chuyển</span>
-                                                </th>
-                                                <td><strong class="text-green">Miễn phí</strong></td>
-                                            </tr>
-                                        </tbody>
-                                        <tbody>
-                                            <tr>
-                                                <th>
-                                                    <span class="mb0" style="font-weight: 700;">Tổng</span>
-                                                </th>
-                                                <td style="font-weight: 700; color: #1c1e1e; ">55.000.000 VND</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <button class="btn btn-primary btn-block">Thanh toán</button>
-                            </div>
+                        <ul class="prices pinside20">
+                            <li class="prices-item">
+                                <span class="prices-text">Tạm tính</span>
+                                <span class="prices-value">47.750.000đ</span>
+                            </li>
+                            <li class="prices-item">
+                                <span class="prices-text">Giảm giá</span>
+                                <span class="prices-value">0đ</span>
+                            </li>
+                        </ul>
+                        <div class="prices-total pinside20">
+                            <span class="price-text">Tổng cộng</span>
+                            <span class="prices-value prices-final text-red">47.750.000đ</span>
                         </div>
                     </div>
-                    <!-- coupon-section -->
-                    <div class="box mb30">
-                        <div class="box-head">
-                            <h3 class="head-title">Mã giảm giá</h3>
-                        </div>
-                        <div class="box-body">
-                            <form>
-                                <div class="coupon-form">
-                                    <input type="text" name="coupon_code" class="form-control" id="coupon_code" value=""
-                                        placeholder="Nhập mã giảm giá">
-                                    <input type="submit" class="btn btn-primary btn-block" name="apply_coupon"
-                                        value="Áp dụng">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- /.coupon-section -->
+                    <a href="checkout.html" class="btn-default btn-checkout">Mua Hàng</a>
                 </div>
             </div>
-            <!-- /.cart-total -->
         </div>
     </div>
+    <!-- /.cart-total -->
+    </div>
+
     <!-- /.cart-section -->
     <!-- footer -->
     <div class="footer">
@@ -366,6 +355,27 @@
     <script type="text/javascript" src="js/sticky-header.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/multiple-carousel.js"></script>
+
+    <script>
+        function dcQuantity() {
+            var result = document.getElementById('quantity-input');
+            var qty = result.value;
+            if (!isNaN(qty) && qty > 1) {
+                result.value--;
+                document.getElementById('quantity-input').innerHTML = qty;
+            }
+            return false;
+        };
+        function icQuantity() {
+            var result = document.getElementById('quantity-input');
+            var qty = result.value;
+            if (!isNaN(qty) && qty < 10) {
+                result.value++;
+                document.getElementById('quantity-input').innerHTML = qty;
+            }
+            return false;
+        }
+    </script>
 
 </body>
 

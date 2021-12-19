@@ -715,6 +715,9 @@ a img.aligncenter {
 .text-secondary {
   color: #848687;
 }
+.text-red{
+  color: rgb(231,61,75);
+}
 
 .well-block {
   background-color: #fff;
@@ -769,26 +772,7 @@ a img.aligncenter {
 }
 
 /*--- Feature center class ---*/
-.feature-center {
-}
-.feature-center .feature-icon {
-}
-.feature-center .feature-icon.feature-circle:hover {
-}
-.feature-center .feature-icon.feature-circle {
-}
-.feature-center .feature-content {
-}
 
-/*--- Feature list class ---*/
-.feature-list {
-}
-.feature-list ul {
-}
-.feature-list ul li {
-}
-.feature-list li:before {
-}
 
 /*--------------------------------
 4.6 Bullet/arrow
@@ -814,32 +798,7 @@ a img.aligncenter {
 /*--------------------------------
 4.7 Call to actions 
 ----------------------------------*/
-.cta-block {
-}
-.cta-icon {
-}
-.cta-content {
-}
-.cta-line {
-}
-.cta-title {
-}
-.widget-cta {
-}
-.widget-cta-block {
-}
-.widget-cta-content {
-}
-.widget-cta-icon {
-}
-.widget-testimonial {
-}
-.widget-testi-content {
-}
-.widget-cta-text {
-}
-.widget-cta-title {
-}
+
 
 /*--------------------------------
  4.8 Image Hover Effect 
@@ -2620,6 +2579,156 @@ h3 {
   font-weight: 400;
   font-size: 14px;
   color: #1c1e1e;
+}
+
+/*==============cart page================*/
+
+.cart-content{
+  background-color: white;
+  padding: 50px 80px;
+}
+
+.cart-content .title-header{
+  text-align: center;
+}
+
+.cart-content .checkboxStyle{
+  width: 20px;
+  height: 20px;
+}
+.cart-content table{
+  border: 1px solid rgb(177, 177, 177);
+  /* max-width: 70%; */
+  width: 100%;
+}
+
+.cart-content table th{
+  text-align: center;
+}
+.cart-content table tbody img{
+  width: 100px;
+}
+
+.cart-content .item-center{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-content .item-center i{
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.cart-content .product-title{
+  text-align:left;
+  justify-content: left;
+}
+
+.cart-content table .quantity{
+  display: flex;
+}
+
+.cart-content table .quantity .btn-quantity{
+  background: rgba(240, 240, 240, 0.719);
+  border: 1px solid rgb(207, 207, 207);
+  padding:0px 5px;
+  height: 35px;
+  width: 35px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.cart-content table .quantity .decrease-quantity {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.cart-content table .quantity .increase-quantity {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.cart-content table .quantity .quantity-input {
+  width: 40px;
+  font-size: 16px;
+  text-align: center;
+  height: 35px;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid rgb(207, 207, 207);
+  border-right: none;
+  border-left: none;
+  outline: 0;
+}
+.cart-content .prices-summary{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.cart-content .prices-summary .left-content{
+  vertical-align: bottom;
+}
+.cart-content .total-receipt{
+  border: 1px solid rgb(185, 185, 185);
+  width: 320px;
+  box-sizing: border-box;
+ 
+}
+.cart-content .total-receipt .promotion-code{
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.cart-content .total-receipt .promotion-code input{
+  width: 200px;
+  outline: 0;
+  padding: 3px 5px;
+  box-sizing: border-box;
+  height: 36px;
+  border: 1px solid rgb(185, 185, 185);
+}
+
+.cart-content .total-receipt .promotion-code button{
+  width: 70px;
+  outline: 0;
+  border: none;
+  height: 36px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+
+.cart-content .total-receipt .prices .prices-item{
+  display: flex;
+  justify-content: space-between;
+  color: rgb(83, 83, 83);
+}
+
+.cart-content .total-receipt .prices-total{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(185, 185, 185);
+  color: rgb(83, 83, 83);
+}
+
+.cart-content .total-receipt .prices-total .prices-final{
+  font-size: 22px;
+ 
+}
+.cart-content .prices-summary{
+ 
+}
+
+.cart-content .btn-checkout{
+  width: 320px;
+  display: block;
+  text-align: center;
+  height: 40px;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin-top: 15px;
 }
 
 /*--------------------------
