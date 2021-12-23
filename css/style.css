@@ -3772,6 +3772,11 @@ Class----------------
   margin-bottom: 5px;
 }
 
+.receipt-infor-details .redirect-to-receipt{
+  display: block;
+  text-align: center;
+}
+
 /*===============forgot-password-page===================*/
 
 .forgot-container{
