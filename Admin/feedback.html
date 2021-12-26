@@ -18,7 +18,7 @@
   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
   <link rel="stylesheet" href="assets/css/admin.css">
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-  
+
   <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.4-web/css/all.min.css">
   <link rel="stylesheet" href="../css/css_admin/admin1.css">
   <link rel="stylesheet" href="../css/css_admin/admin.css">
@@ -36,47 +36,59 @@
   <!-- Right Panel -->
 
   <div class="d-flex" id="wrapper">
-        <!-- Sidebar -->
-        <!--Nav-->
-        <div class="side-bar bg-light border-right" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center"><b>Mobile Shop</b></div>
-          <div class="list-group list-group-flush">
-              <ul>
-                  <li>
-                      <a href="admin.html" class="list-group-item list-group-item-action  "> Trang chủ <i
-                              class="menu-icon fa fa-laptop"></i></a>
-                  </li>
-                  <li>
-                      <a href="dataUser.html" class="list-group-item list-group-item-action   ">
-                          Thông tin người dùng<i class="menu-icon fas fa-users font-list"></i></a>
-                  </li>
-                  <li>
-                      <a href="dataProduct.html" class="list-group-item list-group-item-action "> Thông tin sản phẩm
-                          <i class="menu-icon fas fa-mobile-alt font-list"></i></a>
-                  </li>
-                  <li>
-                      <a href="admin-manager-recipt.html" class="list-group-item list-group-item-action "> Quản lí đơn hàng <i class="menu-icon fas fa-shopping-cart font-list"></i></a>
-                  </li>
-                  <li>
-                      <a href="admin-branch.html" class="list-group-item list-group-item-action "> Thông
-                          tin
-                          thương hiệu <i class="menu-icon fas fa-archway"></i></a>
-                  </li>
-                  <li>
-                      <a href="admin-cancel-reciept.html" class="list-group-item list-group-item-action"> Đơn
-                          hàng bị hủy <i class="menu-icon fas fa-phone-slash"></i></a>
-                  </li>
-                  <li>
-                    <a href="feedback.html" class="list-group-item list-group-item-action active"> Phản hồi khách hàng <i class="menu-icon far fa-paper-plane"></i></a>
-                </li>    <li>
+    <!-- Sidebar -->
+    <!--Nav-->
+    <div class="side-bar bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading text-center"><b>Mobile Shop</b></div>
+      <div class="profile">
+        <div class="profile-pic">
+          <img src="images/admin.jpg" alt="">
+        </div>
+        <div class="profile-info">
+          <span>Welcome</span>
+          <h5>Administrator</h5>
+        </div>
+      </div>
+      <div class="list-group list-group-flush">
+        <ul>
+          <li>
+            <a href="admin.html" class="list-group-item list-group-item-action  "> Trang chủ <i
+                class="menu-icon fa fa-laptop"></i></a>
+          </li>
+          <li>
+            <a href="dataUser.html" class="list-group-item list-group-item-action   ">
+              Thông tin người dùng<i class="menu-icon fas fa-users font-list"></i></a>
+          </li>
+          <li>
+            <a href="dataProduct.html" class="list-group-item list-group-item-action "> Thông tin sản phẩm
+              <i class="menu-icon fas fa-mobile-alt font-list"></i></a>
+          </li>
+          <li>
+            <a href="admin-manager-recipt.html" class="list-group-item list-group-item-action "> Quản lí đơn hàng <i
+                class="menu-icon fas fa-shopping-cart font-list"></i></a>
+          </li>
+          <li>
+            <a href="admin-branch.html" class="list-group-item list-group-item-action "> Thông
+              tin
+              thương hiệu <i class="menu-icon fas fa-archway"></i></a>
+          </li>
+          <li>
+            <a href="admin-cancel-reciept.html" class="list-group-item list-group-item-action"> Đơn
+              hàng bị hủy <i class="menu-icon fas fa-phone-slash"></i></a>
+          </li>
+          <li>
+            <a href="feedback.html" class="list-group-item list-group-item-action active"> Phản hồi khách hàng <i
+                class="menu-icon far fa-paper-plane"></i></a>
+          </li>
+          <!-- <li>
             <a href="admin-filter.html" class="list-group-item list-group-item-action "> Dữ liệu lọc <i
                 class="menu-icon fas fa-filter"></i></a>
-          </li>
-              </ul>
-          </div>
+          </li> -->
+        </ul>
       </div>
-      <!--/Nav-->
-      <!-- /#sidebar-wrapper -->
+    </div>
+    <!--/Nav-->
+    <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -146,145 +158,162 @@
                   <div class="card">
                     <div class="card-body">
                       <div class=" mb-2">
-                        <h4 class="text-center mt-3 mb-3">Phản hồi của khách hàng</h4>
+                        <h4 class="text-center mt-3 mb-4">Phản hồi của khách hàng</h4>
                         <div class="row">
-                            <div class="show-page mb-3 ml-3">
-                                
-                                  Hiển thị <span> <select id="show" onclick="select_page()">
-                                  <option value="10">
-                                    10
-                                  </option>
-                                  <option value="20">
-                                    20
-                                  </option>
-                                  <option value="50">
-                                    50
-                                  </option>
-                                </select></span> cột
-                            </div>
+                          <div class="show-page mb-3 ml-3">
 
-                           
-                            <div class="show-page  arrange" >
-                                    
-                              Tìm kiếm <span> <input id="myInput"  style="padding-left: 15px; border: 0.5px solid grey;" text" placeholder="Search.."></span> 
-                         </div>
+                            Hiển thị <span> <select id="show" onclick="select_page()">
+                                <option value="10">
+                                  10
+                                </option>
+                                <option value="20">
+                                  20
+                                </option>
+                                <option value="50">
+                                  50
+                                </option>
+                              </select></span> cột
+                          </div>
 
-                       </div>
-                       
+
+                          <div class="show-page  arrange">
+
+                            Tìm kiếm <span> <input id="myInput" style="padding-left: 15px; border: 0.5px solid grey;"
+                                text" placeholder="Search.."></span>
+                          </div>
+
+                        </div>
+
                         <table id="bootstrap-data-table" class="table table-hover ">
-                           <thead class="thead-light">
+                          <thead class="thead-light">
                             <tr>
-                                <th>Họ tên</th>
-                                <th>Email</th>
-                                <th>Số điện thoại</th>
-                                <th>Thời gian</th>
-                                <th>Lời nhắn</th>
-                                <th></th>
+                              <th>Họ tên</th>
+                              <th>Email</th>
+                              <th>Số điện thoại</th>
+                              <th>Thời gian</th>
+                              <th>Lời nhắn</th>
+                              <th></th>
                             </tr>
                           </thead>
-                          
+
                           <tbody id="content-table">
-                                    <tr>
-                                      
-                                      <td>Trần Thanh Bảo</td>
-                                      <td>baoCute@gmail.com</td>
-                                      <td>0122333333</td>
-                                      <td>20/1/2019</td>
-                                      <td class="feedback">
-                                        Dịch vụ chăm sóc khách hàng rất tốt, sản phẩm như mong đợi.
-                                      </td>
-                                      <td class="row" style="border: none;">
-                                        <div style="margin: auto;">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="text-center fas fa-paper-plane"></i></button>
+                            <tr>
 
-                                            <button  class="btn btn-danger sizeTh1"  data-toggle="modal" data-target="#delete" data-toggle="tooltip" data-placement="top" title="Xóa">
-                                                <i class="txt-center menu-icon fas fa-trash-alt"></i>
-                                            </button>                                
-                                        </div>
-
-                                      </td>
-                                    </tr>
-
-
-                                    <td>Trần Đăng</td>
-                                    <td>dang@gmail.com</td>
-                                    <td>01223332</td>
-                                    <td>20/1/2019</td>
-                                    <td class="feedback">
-                                        Mặc hàng tốt,giao nhanh
-                                    </td>
-                                    <td class="row" style="border: none;">
-                                      <div style="margin: auto;">
-                                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="text-center fas fa-paper-plane"></i></button>
-
-                                          <button  class="btn btn-danger sizeTh1"  data-toggle="modal" data-target="#delete" data-toggle="tooltip" data-placement="top" title="Xóa">
-                                              <i class="txt-center menu-icon fas fa-trash-alt"></i>
-                                          </button>                                
-                                      </div>
-
-                                    </td>
-                                  </tr>
-
-
-                                  <td>Nguyễn thị hoa hồng</td>
-                                  <td>baoCute@gmail.com</td>
-                                  <td>0122333333</td>
-                                  <td>20/1/2019</td>
-                                  <td class="feedback">
-                                    Dịch vụ chăm sóc khách hàng rất tốt, sản phẩm như mong đợi.
-                                  </td>
-                                  <td class="row" style="border: none;">
-                                    <div style="margin: auto;">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="text-center fas fa-paper-plane"></i></button>
-
-                                        <button  class="btn btn-danger sizeTh1"  data-toggle="modal" data-target="#delete" data-toggle="tooltip" data-placement="top" title="Xóa">
-                                            <i class="txt-center menu-icon fas fa-trash-alt"></i>
-                                        </button>                                
-                                    </div>
-
-                                  </td>
-                                </tr>
-
-                                <td>YangHo</td>
-                                <td>ho@gmail.com</td>
-                                <td>0122333333</td>
-                                <td>20/1/2019</td>
-                                <td class="feedback">
-                                  Admin cho e hỏi e mua Note 9 bản 3Gb-64 bây giờ em muốn đổi để lên cơn Note 9 Pro 6Gb-64 này thì bên cellphone thu mua con note 9 của em giá bao nhiêu ạ. E cảm ơn
-                                </td>
-                                <td class="row" style="border: none;">
-                                  <div style="margin: auto;">
-                                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="text-center fas fa-paper-plane"></i></button>
-
-                                      <button  class="btn btn-danger sizeTh1"  data-toggle="modal" data-target="#delete" data-toggle="tooltip" data-placement="top" title="Xóa">
-                                          <i class="txt-center menu-icon fas fa-trash-alt"></i>
-                                      </button>                                
-                                  </div>
-
-                                </td>
-                              </tr>
-
-
-                              <td>Trần Thanh Trung</td>
-                              <td>trung@gmail.com</td>
+                              <td>Trần Thanh Bảo</td>
+                              <td>baoCute@gmail.com</td>
                               <td>0122333333</td>
                               <td>20/1/2019</td>
                               <td class="feedback">
-                                trong tầm giá 5 đến 6tr5 thì máy nào là sự lựa chọn tốt nhất ạ
+                                Dịch vụ chăm sóc khách hàng rất tốt, sản phẩm như mong đợi.
                               </td>
                               <td class="row" style="border: none;">
                                 <div style="margin: auto;">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="text-center fas fa-paper-plane"></i></button>
+                                  <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModal" data-whatever="@mdo"><i
+                                      class="text-center fas fa-paper-plane"></i></button>
 
-                                    <button  class="btn btn-danger sizeTh1"  data-toggle="modal" data-target="#delete" data-toggle="tooltip" data-placement="top" title="Xóa">
-                                        <i class="txt-center menu-icon fas fa-trash-alt"></i>
-                                    </button>                                
+                                  <button class="btn btn-danger sizeTh1" data-toggle="modal" data-target="#delete"
+                                    data-toggle="tooltip" data-placement="top" title="Xóa">
+                                    <i class="txt-center menu-icon fas fa-trash-alt"></i>
+                                  </button>
                                 </div>
 
                               </td>
                             </tr>
 
-                                  
+
+                            <td>Trần Đăng</td>
+                            <td>dang@gmail.com</td>
+                            <td>01223332</td>
+                            <td>20/1/2019</td>
+                            <td class="feedback">
+                              Mặc hàng tốt,giao nhanh
+                            </td>
+                            <td class="row" style="border: none;">
+                              <div style="margin: auto;">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                  data-target="#exampleModal" data-whatever="@mdo"><i
+                                    class="text-center fas fa-paper-plane"></i></button>
+
+                                <button class="btn btn-danger sizeTh1" data-toggle="modal" data-target="#delete"
+                                  data-toggle="tooltip" data-placement="top" title="Xóa">
+                                  <i class="txt-center menu-icon fas fa-trash-alt"></i>
+                                </button>
+                              </div>
+
+                            </td>
+                            </tr>
+
+
+                            <td>Nguyễn thị hoa hồng</td>
+                            <td>baoCute@gmail.com</td>
+                            <td>0122333333</td>
+                            <td>20/1/2019</td>
+                            <td class="feedback">
+                              Dịch vụ chăm sóc khách hàng rất tốt, sản phẩm như mong đợi.
+                            </td>
+                            <td class="row" style="border: none;">
+                              <div style="margin: auto;">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                  data-target="#exampleModal" data-whatever="@mdo"><i
+                                    class="text-center fas fa-paper-plane"></i></button>
+
+                                <button class="btn btn-danger sizeTh1" data-toggle="modal" data-target="#delete"
+                                  data-toggle="tooltip" data-placement="top" title="Xóa">
+                                  <i class="txt-center menu-icon fas fa-trash-alt"></i>
+                                </button>
+                              </div>
+
+                            </td>
+                            </tr>
+
+                            <td>YangHo</td>
+                            <td>ho@gmail.com</td>
+                            <td>0122333333</td>
+                            <td>20/1/2019</td>
+                            <td class="feedback">
+                              Admin cho e hỏi e mua Note 9 bản 3Gb-64 bây giờ em muốn đổi để lên cơn Note 9 Pro 6Gb-64
+                              này thì bên cellphone thu mua con note 9 của em giá bao nhiêu ạ. E cảm ơn
+                            </td>
+                            <td class="row" style="border: none;">
+                              <div style="margin: auto;">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                  data-target="#exampleModal" data-whatever="@mdo"><i
+                                    class="text-center fas fa-paper-plane"></i></button>
+
+                                <button class="btn btn-danger sizeTh1" data-toggle="modal" data-target="#delete"
+                                  data-toggle="tooltip" data-placement="top" title="Xóa">
+                                  <i class="txt-center menu-icon fas fa-trash-alt"></i>
+                                </button>
+                              </div>
+
+                            </td>
+                            </tr>
+
+
+                            <td>Trần Thanh Trung</td>
+                            <td>trung@gmail.com</td>
+                            <td>0122333333</td>
+                            <td>20/1/2019</td>
+                            <td class="feedback">
+                              trong tầm giá 5 đến 6tr5 thì máy nào là sự lựa chọn tốt nhất ạ
+                            </td>
+                            <td class="row" style="border: none;">
+                              <div style="margin: auto;">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                  data-target="#exampleModal" data-whatever="@mdo"><i
+                                    class="text-center fas fa-paper-plane"></i></button>
+
+                                <button class="btn btn-danger sizeTh1" data-toggle="modal" data-target="#delete"
+                                  data-toggle="tooltip" data-placement="top" title="Xóa">
+                                  <i class="txt-center menu-icon fas fa-trash-alt"></i>
+                                </button>
+                              </div>
+
+                            </td>
+                            </tr>
+
+
 
                           </tbody>
                         </table>
@@ -294,7 +323,8 @@
                             <span id="page-number">
 
                             </span>
-                            <button onclick="next_page()"> Sau</button></div>
+                            <button onclick="next_page()"> Sau</button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -326,14 +356,15 @@
               </div>
             </div>
             <!--/Modal add-->
-            
+
           </div><!-- /#right-panel -->
         </div>
       </div>
       <!-- /#page-content-wrapper -->
     </div>
     <!-- feedback -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -364,27 +395,28 @@
 
 
     <!-- delete product -->
-      <!-- Modal -->
-          <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Xác nhận xóa phản hồi của khách hàng</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  Bạn có muốn xóa phản hồi này.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Không</button>
-                  <button type="button" data-dismiss="modal" class="btn btn-primary">Đồng ý</button>
-                </div>
-              </div>
-            </div>
+    <!-- Modal -->
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Xác nhận xóa phản hồi của khách hàng</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-    
+          <div class="modal-body">
+            Bạn có muốn xóa phản hồi này.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Không</button>
+            <button type="button" data-dismiss="modal" class="btn btn-primary">Đồng ý</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Right Panel -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -405,23 +437,23 @@
 
 
     <script>
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();   
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
       });
-      </script>
+    </script>
 
-      <!-- search -->
-      <script>
-        $(document).ready(function(){
-          $("#myInput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#content-table tr").filter(function() {
-              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
+    <!-- search -->
+    <script>
+      $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#content-table tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
           });
         });
-        </script>
-    
+      });
+    </script>
+
 
 
 </body>

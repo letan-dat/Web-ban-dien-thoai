@@ -19,50 +19,60 @@
 
 <body>
   <div class="d-flex" id="wrapper">
-       <!-- Sidebar -->
-      
-         <!--Nav-->
-        <div class="side-bar bg-light border-right" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center"><b>Mobile Shop</b></div>
-       
-          <div class="list-group list-group-flush">
-              <ul>
-                  <li>
-                      <a href="admin.html" class="list-group-item list-group-item-action  active"> Trang chủ <i
-                              class="menu-icon fa fa-laptop"></i></a>
-                  </li>
-                  <li>
-                      <a href="dataUser.html" class="list-group-item list-group-item-action   ">
-                          Thông tin người dùng<i class="menu-icon fas fa-users font-list"></i></a>
-                  </li>
-                  <li>
-                      <a href="dataProduct.html" class="list-group-item list-group-item-action  "> Thông tin sản phẩm
-                          <i class="menu-icon fas fa-mobile-alt font-list"></i></a>
-                  </li>
-                  <li>
-                      <a href="admin-manager-recipt.html" class="list-group-item list-group-item-action "> Quản lí đơn hàng <i class="menu-icon fas fa-shopping-cart font-list"></i></a>
-                  </li>
-                  <li>
-                      <a href="admin-manager-recipt.html" class="list-group-item list-group-item-action "> Thông
-                          tin
-                          thương hiệu <i class="menu-icon fas fa-archway"></i></a>
-                  </li>
-                  <li>
-                      <a href="admin-manager-recipt.html" class="list-group-item list-group-item-action"> Đơn
-                          hàng bị hủy <i class="menu-icon fas fa-phone-slash"></i></a>
-                  </li>
-                  <li>
-                    <a href="feedback.html" class="list-group-item list-group-item-action"> Phản hồi khách hàng <i class="menu-icon far fa-paper-plane"></i></a>
-                </li>
-    <li>
+    <!-- Sidebar -->
+
+    <!--Nav-->
+    <div class="side-bar bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading text-center"><b>Mobile Shop</b></div>
+      <div class="profile">
+        <div class="profile-pic">
+          <img src="images/admin.jpg" alt="">
+        </div>
+        <div class="profile-info">
+          <span>Welcome</span>
+          <h5>Administrator</h5>
+        </div>
+      </div>
+      <div class="list-group list-group-flush">
+        <ul>
+          <li>
+            <a href="admin.html" class="list-group-item list-group-item-action  active"> Trang chủ <i
+                class="menu-icon fa fa-laptop"></i></a>
+          </li>
+          <li>
+            <a href="dataUser.html" class="list-group-item list-group-item-action   ">
+              Thông tin người dùng<i class="menu-icon fas fa-users font-list"></i></a>
+          </li>
+          <li>
+            <a href="dataProduct.html" class="list-group-item list-group-item-action  "> Thông tin sản phẩm
+              <i class="menu-icon fas fa-mobile-alt font-list"></i></a>
+          </li>
+          <li>
+            <a href="admin-manager-recipt.html" class="list-group-item list-group-item-action "> Quản lí đơn hàng <i
+                class="menu-icon fas fa-shopping-cart font-list"></i></a>
+          </li>
+          <li>
+            <a href="admin-manager-recipt.html" class="list-group-item list-group-item-action "> Thông
+              tin
+              thương hiệu <i class="menu-icon fas fa-archway"></i></a>
+          </li>
+          <li>
+            <a href="admin-manager-recipt.html" class="list-group-item list-group-item-action"> Đơn
+              hàng bị hủy <i class="menu-icon fas fa-phone-slash"></i></a>
+          </li>
+          <li>
+            <a href="feedback.html" class="list-group-item list-group-item-action"> Phản hồi khách hàng <i
+                class="menu-icon far fa-paper-plane"></i></a>
+          </li>
+          <!-- <li>
             <a href="admin-filter.html" class="list-group-item list-group-item-action "> Dữ liệu lọc <i
                 class="menu-icon fas fa-filter"></i></a>
-          </li>
-              </ul>
-          </div>
+          </li> -->
+        </ul>
       </div>
-      <!--/Nav-->
-      <!-- /#sidebar-wrapper -->
+    </div>
+    <!--/Nav-->
+    <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -150,33 +160,36 @@
           </table>
         </div>
         <div class="border mb-2">
-          <h4 class="text-center mt-3 mb-3">Bảng thống kê bán hàng</h4>
+          <h4 class="text-center mt-3 mb-4">Bảng thống kê bán hàng</h4>
           <div class="row">
-          <div class="show-page mb-3 ml-3" style="padding-left: 10px;">
-            Hiển thị <span> <select id="show" onclick="select_page()">
-                <option value="10">
-                  10
-                </option>
-                <option value="20">
-                  20
-                </option>
-                <option value="50">
-                  50
-                </option>
-              </select></span> cột
-          </div>
-            <div class="show-page "  style="margin-left: 50px;">
-                    
-                Tìm kiếm <span> <input id="myInput"  style="padding-left: 15px; border: 0.5px solid grey;" type="text" placeholder="Search.."></span> 
-           </div>
+            <div class="show-page mb-3 ml-3" style="padding-left: 10px;">
+              Hiển thị <span> <select id="show" onclick="select_page()">
+                  <option value="10">
+                    10
+                  </option>
+                  <option value="20">
+                    20
+                  </option>
+                  <option value="50">
+                    50
+                  </option>
+                </select></span> cột
+            </div>
+            <div class="show-page " style="margin-left: 50px;">
+
+              Tìm kiếm <span> <input id="myInput" style="padding-left: 15px; border: 0.5px solid grey;" type="text"
+                  placeholder="Search.."></span>
+            </div>
           </div>
           <table class="table table-hover ">
             <thead class="thead-light">
               <tr>
                 <th scope="col">Thời gian</th>
                 <th scope="col">Doang thu</th>
-                <th scope="col" data-toggle="tooltip" data-placement="top" title="Số lượng sản phẩm được thêm"><span title="Số lượng sản phẩm"> SLSP</span> bán được</th>
-                <th scope="col" data-toggle="tooltip" data-placement="top" title="Số lượng sản phẩm tồn kho"><span title="Số lượng sản phẩm"> SLSP</span> được thêm</th>
+                <th scope="col" data-toggle="tooltip" data-placement="top" title="Số lượng sản phẩm được thêm"><span
+                    title="Số lượng sản phẩm"> SLSP</span> bán được</th>
+                <th scope="col" data-toggle="tooltip" data-placement="top" title="Số lượng sản phẩm tồn kho"><span
+                    title="Số lượng sản phẩm"> SLSP</span> được thêm</th>
                 <th scope="col">Số lượng tồn kho</th>
                 <th scope="col">Số lượng truy cập</th>
               </tr>
@@ -196,7 +209,7 @@
                 <td>3</td>
                 <td>4</td>
                 <td>46</td>
-                 <td>200</td>
+                <td>200</td>
               </tr>
               <tr>
                 <th scope="row">7/2020</th>
@@ -241,7 +254,8 @@
             <span id="page-number">
 
             </span>
-            <button onclick="next_page()"> Sau</button></div>
+            <button onclick="next_page()"> Sau</button>
+          </div>
         </div>
         <!-- <table class="table">
           <thead class="thead-dark">
@@ -294,24 +308,24 @@
   </script>
   <script src="../js/js_admin/divide-page.js"></script>
 
-        <!-- search -->
-        <script>
-          $(document).ready(function(){
-            $("#myInput").on("keyup", function() {
-              var value = $(this).val().toLowerCase();
-              $("#content-table tr").filter(function() {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-              });
-            });
-          });
-          </script>
-      
-<script>
-  $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-  });
+  <!-- search -->
+  <script>
+    $(document).ready(function () {
+      $("#myInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#content-table tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
   </script>
-  
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
 </body>
 
 </html>

@@ -110,46 +110,46 @@ function create_page(number) {
 function themMau() {
   /// lấy số lượng form hiện tại
   var current = document.getElementById("btnAddColor").name;
-  n = parseInt(current)+1;
- 
-  
+  n = parseInt(current) + 1;
+
+
   $('#color').append(' <div  class="row boder-color">'
-  +'<div class="col-4 space-top " id="chooseColor" name="1">'
-  +'<h5 class="spacing_form">Màu sắc</h5>'
-  +'<div class="input-group mb-2 ">'
-  +'  <div class="input-group-prepend">'
-  +'    <div class="input-group-text"><i class="fas fa-mobile-alt"></i></div>'
-  +'  </div>'
-  +'  <select name="" class="form-control w ">'
-  +'    <option value="">Đen</option>'
-  +'    <option value="">Trắng</option>'
-  +'    <option  value="">Đỏ</option>'
-  +'    <option value="">Xanh</option>'
-  +'    <option value="">Hồng</option>'
-  +'    <option value="">Lam</option>'
-  +'  </select>'
-  +'</div>'
-  +'</div>'
+    + '<div class="col-4 space-top " id="chooseColor" name="1">'
+    + '<h5 class="spacing_form">Màu sắc</h5>'
+    + '<div class="input-group mb-2 ">'
+    + '  <div class="input-group-prepend">'
+    + '    <div class="input-group-text"><i class="fas fa-mobile-alt"></i></div>'
+    + '  </div>'
+    + '  <select name="" class="form-control w ">'
+    + '    <option value="">Đen</option>'
+    + '    <option value="">Trắng</option>'
+    + '    <option  value="">Đỏ</option>'
+    + '    <option value="">Xanh</option>'
+    + '    <option value="">Hồng</option>'
+    + '    <option value="">Lam</option>'
+    + '  </select>'
+    + '</div>'
+    + '</div>'
 
-  +'<div class="col-4 space-top">'
-  +'<h5 class="spacing_form ">URL hình ảnh</h5>'
-  +'<input class="mt-2" type="file" accept=".jpg,.png,.jpge">'
-  +'</div>'
+    + '<div class="col-4 space-top">'
+    + '<h5 class="spacing_form ">URL hình ảnh</h5>'
+    + '<input class="mt-2" type="file" accept=".jpg,.png,.jpge">'
+    + '</div>'
 
-  +'<div class="col-4 space-top">'
-  +'<h5 class="spacing_form">Số lượng</h5>'
-  +'<div class="input-group mb-2">'
-  +'  <div class="input-group-prepend">'
-  +'    <div class="input-group-text"><i class="fas fa-tag "></i></div>'
-  +'  </div>'
-  +'  <input type="number" class="form-control py-4" value="" placeholder="Nhập số lượng">'
-  +'</div>'
-  +'</div>'
-  +'</div>');    
-  var textnode = document.createTextNode("Demo"+n);
+    + '<div class="col-4 space-top">'
+    + '<h5 class="spacing_form">Số lượng</h5>'
+    + '<div class="input-group mb-2">'
+    + '  <div class="input-group-prepend">'
+    + '    <div class="input-group-text"><i class="fas fa-tag "></i></div>'
+    + '  </div>'
+    + '  <input type="number" class="form-control py-4" value="" placeholder="Nhập số lượng">'
+    + '</div>'
+    + '</div>'
+    + '</div>');
+  var textnode = document.createTextNode("Demo" + n);
   node.appendChild(textnode);
   document.getElementById("addColorForm").appendChild(node);
 
-///cập nhật lại số lượng form
-  document.getElementById("btnAddColor").name=parseInt(current)+1;
+  ///cập nhật lại số lượng form
+  document.getElementById("btnAddColor").name = parseInt(current) + 1;
 }

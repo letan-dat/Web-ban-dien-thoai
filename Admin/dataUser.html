@@ -37,7 +37,16 @@
     <!-- Sidebar -->
     <!--Nav-->
     <div class="side-bar bg-light border-right" id="sidebar-wrapper">
-        <div class="sidebar-heading text-center"><b>Mobile Shop</b></div>
+      <div class="sidebar-heading text-center"><b>Mobile Shop</b></div>
+      <div class="profile">
+        <div class="profile-pic">
+          <img src="images/admin.jpg" alt="">
+        </div>
+        <div class="profile-info">
+          <span>Welcome</span>
+          <h5>Administrator</h5>
+        </div>
+      </div>
       <div class="list-group list-group-flush">
         <ul>
           <li>
@@ -53,7 +62,8 @@
               <i class="menu-icon fas fa-mobile-alt font-list"></i></a>
           </li>
           <li>
-            <a href="admin-manager-recipt.html" class="list-group-item list-group-item-action "> Quản lí đơn hàng <i class="menu-icon fas fa-shopping-cart font-list"></i></a>
+            <a href="admin-manager-recipt.html" class="list-group-item list-group-item-action "> Quản lí đơn hàng <i
+                class="menu-icon fas fa-shopping-cart font-list"></i></a>
           </li>
           <li>
             <a href="admin-branch.html" class="list-group-item list-group-item-action "> Thông
@@ -65,11 +75,13 @@
               hàng bị hủy <i class="menu-icon fas fa-phone-slash"></i></a>
           </li>
           <li>
-            <a href="feedback.html" class="list-group-item list-group-item-action"> Phản hồi khách hàng <i class="menu-icon far fa-paper-plane"></i></a>
-        </li>    <li>
+            <a href="feedback.html" class="list-group-item list-group-item-action"> Phản hồi khách hàng <i
+                class="menu-icon far fa-paper-plane"></i></a>
+          </li>
+          <!-- <li>
             <a href="admin-filter.html" class="list-group-item list-group-item-action "> Dữ liệu lọc <i
                 class="menu-icon fas fa-filter"></i></a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -146,41 +158,42 @@
                   <div class="card">
                     <div class="card-body">
                       <div class=" mb-2">
-                        <h4 class="text-center mt-3 mb-3">Danh sách khách hàng</h4>
-                            <div class="row">
-                              <div class="show-page mb-3 ml-3">
-                                  
-                                    Hiển thị <span> <select id="show" onclick="select_page()">
-                                    <option value="10">
-                                      10
-                                    </option>
-                                    <option value="20">
-                                      20
-                                    </option>
-                                    <option value="50">
-                                      50
-                                    </option>
-                                  </select></span> cột
-                              </div>
+                        <h4 class="text-center mt-3 mb-4">Danh sách khách hàng</h4>
+                        <div class="row">
+                          <div class="show-page mb-3 ml-3">
 
-                              <div class="show-page  arrange" >
-                                      
-                                  Sắp xếp <span> <select id="show" onclick="select_page()">
-                                    <option value="10">
-                                      A-Z
-                                    </option>
-                                    <option value="20">
-                                      Z-A
-                                    </option>
-                                  </select></span> 
-                              </div>
-                              <div class="show-page  arrange" >
-                                      
-                                Tìm kiếm <span> <input id="myInput"  style="padding-left: 15px; border: 0.5px solid grey;" text" placeholder="Search.."></span> 
-                           </div>
+                            Hiển thị <span> <select id="show" onclick="select_page()">
+                                <option value="10">
+                                  10
+                                </option>
+                                <option value="20">
+                                  20
+                                </option>
+                                <option value="50">
+                                  50
+                                </option>
+                              </select></span> cột
+                          </div>
+
+                          <div class="show-page  arrange">
+
+                            Sắp xếp <span> <select id="show" onclick="select_page()">
+                                <option value="10">
+                                  A-Z
+                                </option>
+                                <option value="20">
+                                  Z-A
+                                </option>
+                              </select></span>
+                          </div>
+                          <div class="show-page  arrange">
+
+                            Tìm kiếm <span> <input id="myInput" style="padding-left: 15px; border: 0.5px solid grey;"
+                                text" placeholder="Search.."></span>
+                          </div>
                         </div>
                         <table s id="bootstrap-data-table" class="table table-hover ">
-                           <thead class="thead-light">
+                          <thead class="thead-light">
                             <tr>
                               <th><span data-toggle="tooltip" data-placement="top" title="Mã khách hàng">Mã KH</span>
                               </th>
@@ -203,10 +216,10 @@
 
                               <td class="row" style="border: none;">
                                 <div style="margin: auto;">
-                                  <button class="btn btn-success sizeTh1" value="true" id='block'  data-placement="top" title="Block"
-                                    data-target="#block-user" data-toggle="modal"><i
+                                  <button class="btn btn-success sizeTh1" value="true" id='block' data-placement="top"
+                                    title="Block" data-target="#block-user" data-toggle="modal"><i
                                       class="txt-center fas fa-lock"></i></button>
-                                 
+
                                 </div>
                                 <span>
 
@@ -272,10 +285,10 @@
 
                               <td class="row" style="border: none;">
                                 <div style="margin: auto;">
-                                  <button class="btn btn-success sizeTh1" value="true" id='block'  data-placement="top" title="Block"
-                                    data-target="#block-user" data-toggle="modal"><i
+                                  <button class="btn btn-success sizeTh1" value="true" id='block' data-placement="top"
+                                    title="Block" data-target="#block-user" data-toggle="modal"><i
                                       class="txt-center fas fa-lock"></i></button>
-                                 
+
                                 </div>
                                 <span>
 
@@ -341,10 +354,10 @@
 
                               <td class="row" style="border: none;">
                                 <div style="margin: auto;">
-                                  <button class="btn btn-success sizeTh1" value="true" id='block'  data-placement="top" title="Block"
-                                    data-target="#block-user" data-toggle="modal"><i
+                                  <button class="btn btn-success sizeTh1" value="true" id='block' data-placement="top"
+                                    title="Block" data-target="#block-user" data-toggle="modal"><i
                                       class="txt-center fas fa-lock"></i></button>
-                                 
+
                                 </div>
                                 <span>
 
@@ -410,10 +423,10 @@
 
                               <td class="row" style="border: none;">
                                 <div style="margin: auto;">
-                                  <button class="btn btn-success sizeTh1" value="true" id='block'  data-placement="top" title="Block"
-                                    data-target="#block-user" data-toggle="modal"><i
+                                  <button class="btn btn-success sizeTh1" value="true" id='block' data-placement="top"
+                                    title="Block" data-target="#block-user" data-toggle="modal"><i
                                       class="txt-center fas fa-lock"></i></button>
-                                 
+
                                 </div>
                                 <span>
 
@@ -479,10 +492,10 @@
 
                               <td class="row" style="border: none;">
                                 <div style="margin: auto;">
-                                  <button class="btn btn-success sizeTh1" value="true" id='block'  data-placement="top" title="Block"
-                                    data-target="#block-user" data-toggle="modal"><i
+                                  <button class="btn btn-success sizeTh1" value="true" id='block' data-placement="top"
+                                    title="Block" data-target="#block-user" data-toggle="modal"><i
                                       class="txt-center fas fa-lock"></i></button>
-                                 
+
                                 </div>
                                 <span>
 
@@ -548,10 +561,10 @@
 
                               <td class="row" style="border: none;">
                                 <div style="margin: auto;">
-                                  <button class="btn btn-success sizeTh1" value="true" id='block'  data-placement="top" title="Block"
-                                    data-target="#block-user" data-toggle="modal"><i
+                                  <button class="btn btn-success sizeTh1" value="true" id='block' data-placement="top"
+                                    title="Block" data-target="#block-user" data-toggle="modal"><i
                                       class="txt-center fas fa-lock"></i></button>
-                                 
+
                                 </div>
                                 <span>
 
@@ -617,10 +630,10 @@
 
                               <td class="row" style="border: none;">
                                 <div style="margin: auto;">
-                                  <button class="btn btn-success sizeTh1" value="true" id='block'  data-placement="top" title="Block"
-                                    data-target="#block-user" data-toggle="modal"><i
+                                  <button class="btn btn-success sizeTh1" value="true" id='block' data-placement="top"
+                                    title="Block" data-target="#block-user" data-toggle="modal"><i
                                       class="txt-center fas fa-lock"></i></button>
-                                 
+
                                 </div>
                                 <span>
 
@@ -686,10 +699,10 @@
 
                               <td class="row" style="border: none;">
                                 <div style="margin: auto;">
-                                  <button class="btn btn-success sizeTh1" value="true" id='block'  data-placement="top" title="Block"
-                                    data-target="#block-user" data-toggle="modal"><i
+                                  <button class="btn btn-success sizeTh1" value="true" id='block' data-placement="top"
+                                    title="Block" data-target="#block-user" data-toggle="modal"><i
                                       class="txt-center fas fa-lock"></i></button>
-                                 
+
                                 </div>
                                 <span>
 
@@ -745,7 +758,7 @@
                                 </span>
                               </td>
                             </tr>
-                          
+
                         </table>
 
                         <div class="page-navigation">
@@ -753,7 +766,8 @@
                             <span id="page-number">
 
                             </span>
-                            <button onclick="next_page()"> Sau</button></div>
+                            <button onclick="next_page()"> Sau</button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -814,23 +828,23 @@
     <!-- block -->
     <script src="../js/js_admin/user-confirmed.js"></script>
 
-       <!-- search -->
-       <script>
-        $(document).ready(function(){
-          $("#myInput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#content-table tr").filter(function() {
-              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
+    <!-- search -->
+    <script>
+      $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#content-table tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
           });
         });
-        </script>
+      });
+    </script>
 
 
-  <script>
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();   
-    });
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
     </script>
 
 </body>
